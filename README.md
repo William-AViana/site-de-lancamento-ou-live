@@ -10,7 +10,9 @@ e talvez tenham que construir algo semelhante.
 
 - [x] Estrutura HTML
 - [x] Conteúdo
-- [ ] Imagens e ícones
-- [ ] Fontes
-- [ ] Seleção de cores
-- [ ] Estilização CSS e responsivo
+- [x] Imagens e ícones
+- [x] Fontes
+- [x] Seleção de cores
+- [x] Ajustar Layout com CSS
+- [ ] Responsividade
+- [ ] Funções js
