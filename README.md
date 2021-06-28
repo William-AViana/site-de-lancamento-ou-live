@@ -1,4 +1,4 @@
-# site-de-lancamento-ou-live
+# site-de-lançamento-ou-live
 
 Modelo de site de captura de leads, lançamento ou live
 
@@ -8,9 +8,9 @@ e talvez tenham que construir algo semelhante.
 
 ## O que vou fazer nesse projeto?
 
-[x] Estrutura HTML
-[x] Conteúdo
-[ ] Imagens e ícones
-[ ] Fontes
-[ ] Seleção de cores
-[ ] Estilização CSS com responsividade
+- [x] Estrutura HTML
+- [x] Conteúdo
+- [ ] Imagens e ícones
+- [ ] Fontes
+- [ ] Seleção de cores
+- [ ] Estilização CSS e responsivo
