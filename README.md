@@ -14,5 +14,5 @@ e talvez tenham que construir algo semelhante.
 - [x] Fontes
 - [x] Seleção de cores
 - [x] Ajustar Layout com CSS
-- [ ] Responsividade
+- [x] Responsividade
 - [ ] Funções js

@@ -1,5 +1,5 @@
 :root {
-  --header: #1976D2;
+  --header-background: #1976D2;
   --background: #BBDEFB;
   --buttons-details: #4CAF50;
   --text-button: #ffff;
@@ -17,28 +17,35 @@ body {
 }
 
 header {
-  background: var(--header);
-  height: 550px;
+  background: var(--header-background);
+  height: 34.75rem;
   display: flex;
   justify-content: center;
-  margin: 0 0 13em;
+  margin: 0 0 13rem;
   position: relative;
   top: 0;
 }
 
-header > h1 {
+header h1 {
   height: min-content;
   color: #fff;
   font-family: 'Poppins', sans-serif;
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 800;
   margin-top: 2rem;
 }
 
 .container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.grid {
+  padding-right: 10rem;
+  padding-left: 10rem;
+  
 }
 
 .card-form {
@@ -48,7 +55,7 @@ header > h1 {
   width: min(100vw, 900px);
   height: min-content;
   border-radius: 0.5rem;
-  box-shadow: 0 0 40px rgb(92, 92, 92);
+  box-shadow: 0 0 5px rgb(92, 92, 92);
   padding: 0 40px;
 }
 
@@ -92,7 +99,7 @@ button {
   background: var(--buttons-details);
   color: var(--text-button);
 
-  box-shadow: 0 3px 5px black;
+  box-shadow: 0 1px 3px black;
 }
 
 .day-online-free {
@@ -141,7 +148,7 @@ h2 {
   font-weight: 800;
 }
 
-.container-card {
+.cards {
   display: flex;
   gap: 2rem;
   margin: 2rem 0 6rem;
@@ -179,26 +186,35 @@ h3 {
   font-size: 1rem;
 }
 
+/* about */
 #about {
+  padding: 0 1rem;
   display: flex;
-  width: min(110vw, 1050px);
+  justify-content: center;
+  align-items: center;
 }
 
-.content-author {
-  display: flex;
-
-}
-
-picture {
+#about .content-author {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+picture {
+  width: max-content;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
 .author-image {
-  width: 40vw;
+  width: 30rem;
 }
 
 .about-author {
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -208,7 +224,7 @@ picture {
   font-size: 2.5rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
-  margin: 3rem 0 1rem;
+  margin: 0 0 1rem;
 }
 
 .about-author p {
@@ -246,3 +262,227 @@ footer {
   font-size: 1rem;
 }
 
+/* media queries 1024 < */
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 2.4rem;
+  }
+  .card-form {
+    width: min(80vw, 800px);
+    padding: 0 2rem;
+    top: 7.2rem;
+  }
+  .title-form {
+    font-size: 2.4rem;
+    padding: 1.5rem 0 0;
+  }
+
+  .learn {
+    width: 100%;
+  }
+  .container.grid {
+    padding: 0 5rem;
+  }
+}
+
+/* media 768 < */
+@media (max-width: 768px) {
+  header {
+    height: 23.167rem;
+    margin-bottom: 8.667rem;
+  }
+  header h1 {
+    margin-top: 1rem;
+    font-size: 1.92rem;
+  }
+  .card-form {
+    width: min(80vw, 800px);
+    padding: 0 1.25rem;
+    top: 4.5rem;
+  }
+  .title-form {
+    font-size: 1.92rem;
+    padding: 1.5rem 0 0;
+  }
+  .input-group {
+    margin-top: 1.5rem;
+  }
+  input, button {
+    width: 70%;
+    font-size: 1rem;
+  }
+  .day-online-free {
+    margin: 1.5rem 0;
+    gap: 10px;
+  }
+  .day-online-free p {
+    font-size: 1rem;
+  }
+  .image-text {
+    gap: 10px;
+  }
+  .icon-card{
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 2rem;
+  }
+  .background-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.9rem;
+    height: 2.9rem;
+    border-radius: 2rem;
+  }
+
+  .container.grid {
+    padding-left: 1.975rem;
+    padding-right: 1.975rem;
+  }
+  .learn {
+    margin-top: 2rem;
+  }
+  h2 {
+    font-size: 1.92rem;
+  }
+  .learn .icon-card {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+  .learn .cards {
+    gap: 1rem;
+    margin: 1rem 0 3rem;
+  }
+  .learn .content-card {
+    margin: 1rem;
+  }
+
+  #about {
+    padding: 0;
+  }
+  .content-author {
+    height: auto;
+  }
+  .author-image {
+    width: 20rem;
+  }
+  .about-author h2 {
+    font-size: 1.92rem;
+  }
+  .about-author p {
+    font-size: 1rem;
+  }
+
+  footer {
+    height: auto;
+  }
+  footer .text-footer {
+    margin: 1rem 0 0;
+  }
+  footer .text-footer p,
+  footer .text-footer a {
+    font-size: 0.667rem;
+  }
+}
+
+/* media 650 < */
+@media (max-width: 650px) {
+  header h1 {
+    font-size: 1.92rem;
+  }
+  .title-form {
+    font-size: 1.28rem;
+    padding: 1.5rem 1.5rem 0;
+  }
+  input, button {
+    width: 60%;
+    padding: 0.5rem 0.25rem;
+    height: 40px;
+  }
+  .day-online-free {
+    gap: 20px;
+  }
+  .day-online-free .image-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+  }
+  .day-online-free p {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .learn {
+    margin-top: 0;
+  }
+  h2{
+    font-size: 1.92rem;
+  }
+  .card h3 {
+    font-size: 1.28rem;
+  }
+}
+
+/* media 425 < */
+@media (max-width:435px) {
+  .card-form {
+    width: min(85vw, 900px);
+  }
+  .title-form {
+    padding: 1.5rem 0 0;
+    font-size: 1rem;
+  }
+  input, button {
+    width: 95%;
+    height: 40px;
+  }
+  .day-online-free {
+    display: flex;
+    flex-direction: column;
+    margin: 1.25rem 0;
+  }
+  .day-online-free .image-text {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .image-text p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .learn h2 {
+    margin-top: 1.5rem;
+  }
+  .learn .cards {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+
+  .content-author {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .content-author p {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* media 320 < */
+@media (max-width: 320px) {
+  .container.grid {
+    padding-left: 1.370rem;
+    padding-right: 1.370rem;
+  }
+  
+  .learn {
+    margin-top: 2rem;
+  }
+
+  .author-image{
+    width: 15rem;
+  }
+}
