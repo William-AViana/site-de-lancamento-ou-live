@@ -417,18 +417,31 @@ footer {
   .learn {
     margin-top: 0;
   }
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
   h2{
     font-size: 1.92rem;
   }
   .card h3 {
     font-size: 1.28rem;
   }
+
+  .content-author {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 /* media 425 < */
-@media (max-width:435px) {
+@media (max-width:425px) {
+  header {
+    height: 23.167rem;
+  }
   .card-form {
     width: min(85vw, 900px);
+    margin-bottom: 1.5REM;
   }
   .title-form {
     padding: 1.5rem 0 0;
@@ -471,8 +484,11 @@ footer {
   }
 }
 
-/* media 320 < */
-@media (max-width: 320px) {
+/* media 375 < */
+@media (max-width: 375px) {
+  header {
+    height: 23.167rem;
+  }
   .container.grid {
     padding-left: 1.370rem;
     padding-right: 1.370rem;
