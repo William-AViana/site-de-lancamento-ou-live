@@ -17,7 +17,10 @@ body {
 }
 
 header {
-  background: var(--header-background);
+  background-image: url('assets/images/pexels-donald-tong-66134.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 34.75rem;
   display: flex;
   justify-content: center;
@@ -56,14 +59,14 @@ header h1 {
   height: min-content;
   border-radius: 0.5rem;
   box-shadow: 0 0 5px rgb(92, 92, 92);
-  padding: 0 40px;
+  padding: 0 ;
 }
 
 .title-form {
   text-align: center;
   font-size: 2.2rem;
   font-weight: 600;
-  padding: 3rem 3rem 0;
+  padding: 3rem 1.5rem 0;
 }
 
 form {
@@ -94,6 +97,7 @@ button {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
+  text-transform: uppercase;
   border: 0;
   border-radius: 0.5rem;
   background: var(--buttons-details);
